@@ -147,7 +147,7 @@ function ProfileForm({ className }: React.ComponentProps<"form">) {
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="John Doe"
+                    placeholder="Robert Prevost"
                     disabled={isSubmitting}
                     required
                 />
@@ -158,7 +158,7 @@ function ProfileForm({ className }: React.ComponentProps<"form">) {
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="john.doe@gmail.com"
+                    placeholder="bobby.p@vatican.va"
                     disabled={isSubmitting}
                     required
                 />
@@ -169,6 +169,7 @@ function ProfileForm({ className }: React.ComponentProps<"form">) {
                     name="message"
                     id="message"
                     disabled={isSubmitting}
+                    placeholder="The pope says ope!"
                     required
                 />
             </div>
