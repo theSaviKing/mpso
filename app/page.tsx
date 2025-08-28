@@ -202,7 +202,15 @@ export default function TShirtShowcase() {
                     </div>
 
                     <div className="border-primary-foreground/20 mt-8 flex flex-col items-center justify-between gap-1 border-t pt-8 text-sm opacity-90 md:flex-row">
-                        <p>&copy; 2025 The Back Pew. All rights reserved.</p>
+                        <p>
+                            &copy; 2025{" "}
+                            <a
+                                href="https://www.backpewmerch.com"
+                                target="_blank"
+                                className="font-semibold underline decoration-current/40 underline-offset-2 hover:decoration-current"
+                            ></a>
+                            . All rights reserved.
+                        </p>
                         <p>
                             Designed by{" "}
                             <a
