@@ -208,7 +208,9 @@ export default function TShirtShowcase() {
                                 href="https://www.backpewmerch.com"
                                 target="_blank"
                                 className="font-semibold underline decoration-current/40 underline-offset-2 hover:decoration-current"
-                            ></a>
+                            >
+                                The Back Pew
+                            </a>
                             . All rights reserved.
                         </p>
                         <p>
