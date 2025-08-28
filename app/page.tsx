@@ -11,8 +11,11 @@ import {
     TooltipContent,
     TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { ContactForm } from "@/components/contact-form";
 
 export default function TShirtShowcase() {
+    const preorderUrl = "https://forms.gle/KcuqH3X9Nxu1A679A";
+
     return (
         <div className="bg-background text-foreground min-h-screen">
             {/* Hero Section - 70vh */}
@@ -102,9 +105,7 @@ export default function TShirtShowcase() {
                                 size="lg"
                                 className="bg-accent hover:bg-accent/90 text-accent-foreground w-full py-6 text-lg font-bold"
                             >
-                                <Link href="https://forms.gle/KcuqH3X9Nxu1A679A">
-                                    PRE-ORDER NOW
-                                </Link>
+                                <Link href={preorderUrl}>PRE-ORDER NOW</Link>
                             </Button>
                         </div>
                     </div>
@@ -153,8 +154,8 @@ export default function TShirtShowcase() {
             {/* Footer */}
             <footer className="bg-primary text-primary-foreground px-4 py-12">
                 <div className="mx-auto max-w-6xl">
-                    <div className="grid gap-8 md:grid-cols-4">
-                        <div className="space-y-4">
+                    <div className="grid justify-center gap-8 text-center md:grid-cols-4 md:justify-start md:text-left">
+                        <div className="flex flex-col items-center gap-4 md:items-start">
                             <Image
                                 src={logo}
                                 alt="My Pope Says Ope logo"
@@ -170,26 +171,10 @@ export default function TShirtShowcase() {
                             <ul className="space-y-2 text-sm opacity-90">
                                 <li>
                                     <a
-                                        href="#"
+                                        href={preorderUrl}
                                         className="transition-opacity hover:opacity-100"
                                     >
-                                        Size Guide
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="transition-opacity hover:opacity-100"
-                                    >
-                                        Shipping Info
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="transition-opacity hover:opacity-100"
-                                    >
-                                        Returns
+                                        Pre-order Form
                                     </a>
                                 </li>
                             </ul>
@@ -198,30 +183,7 @@ export default function TShirtShowcase() {
                         <div className="space-y-4">
                             <h4 className="font-bold">Connect</h4>
                             <ul className="space-y-2 text-sm opacity-90">
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="transition-opacity hover:opacity-100"
-                                    >
-                                        Instagram
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="transition-opacity hover:opacity-100"
-                                    >
-                                        Twitter
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="transition-opacity hover:opacity-100"
-                                    >
-                                        TikTok
-                                    </a>
-                                </li>
+                                Social media coming soon...
                             </ul>
                         </div>
 
@@ -229,34 +191,17 @@ export default function TShirtShowcase() {
                             <h4 className="font-bold">Support</h4>
                             <ul className="space-y-2 text-sm opacity-90">
                                 <li>
-                                    <a
-                                        href="#"
-                                        className="transition-opacity hover:opacity-100"
-                                    >
-                                        Contact Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="transition-opacity hover:opacity-100"
-                                    >
-                                        FAQ
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="transition-opacity hover:opacity-100"
-                                    >
-                                        Help
-                                    </a>
+                                    <ContactForm>
+                                        <a className="cursor-pointer">
+                                            Contact me
+                                        </a>
+                                    </ContactForm>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div className="border-primary-foreground/20 mt-8 flex flex-col items-center justify-between border-t pt-8 text-sm opacity-90 md:flex-row">
+                    <div className="border-primary-foreground/20 mt-8 flex flex-col items-center justify-between gap-1 border-t pt-8 text-sm opacity-90 md:flex-row">
                         <p>&copy; 2025 The Back Pew. All rights reserved.</p>
                         <p>
                             Designed by{" "}

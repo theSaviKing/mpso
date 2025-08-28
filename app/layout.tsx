@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rubik_Mono_One, Rubik } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const rubikMono = Rubik_Mono_One({
     variable: "--font-rubik-mono",
